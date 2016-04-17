@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 2em;
+        }
+        .box{
+            width: 300px;
+            height: 150px;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+
+        @media screen and (max-width: 500px){
+            .blue{
+                order: 4;
+            }
+            .yellow{
+                order: 3;
+            }
+            .green{
+                order:2;
+            }
+            .red{
+                order: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box blue"> 1</div>
+    <div class="box yellow">2</div>
+    <div class="box green">3</div>
+    <div class="box red">4</div>
+</div>
+
+</body>
+</html>
